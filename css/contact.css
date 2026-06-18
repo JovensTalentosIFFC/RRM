@@ -76,78 +76,85 @@ nav a:hover {
     );
 }
 
-/* PALAVRAS */
-.words {
+ h1 {
+    font-size: clamp(22px, 4vw, 36px);
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.20em;
+    color: rgba(255, 255, 255, 0.92);
+    text-align: center;
+    margin: 0 0 3rem;
+    line-height: 1.2;
+}
+
+/* CONTACT */
+.contact {
     position: absolute;
     inset: 0;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    padding: 2rem;
 }
 
-.word {
-    display: block;
-    font-family: 'Poppins', sans-serif;
+.contact .text {
+    max-width: 580px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.09);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 14px;
+    padding: 2.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    min-width: 450px;
+}
+
+.contact .text h1 {
+    font-size: clamp(18px, 3vw, 28px);
     font-weight: 300;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
-    will-change: transform;
-}
-
-.word-seguranca {
-    font-size: clamp(36px, 6vw, 72px);
-    letter-spacing: 0.35em;
     color: rgba(255, 255, 255, 0.92);
-    text-shadow: 0 0 40px rgba(255, 180, 60, 0.20);
-    animation: drift1 7s ease-in-out infinite alternate;
+    margin: 0;
+    text-align: left;
 }
 
-.word-qualidade {
-    font-size: clamp(20px, 3vw, 38px);
-    letter-spacing: 0.50em;
-    color: rgba(255, 210, 120, 0.70);
-    animation: drift2 9s ease-in-out infinite alternate;
+.contact .text p {
+    font-size: 17px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.85;
+    margin: 0;
 }
 
-.word-compromisso {
-    font-size: clamp(20px, 3vw, 38px);
-    letter-spacing: 0.50em;
-    color: rgba(255, 210, 120, 0.70);
-    animation: drift3 10s ease-in-out infinite alternate;
+.contact .text h2 {
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.30em;
+    text-transform: uppercase;
+    color: rgba(255, 210, 120, 0.80);
+    margin: 0;
 }
 
-.sep {
-    width: 40px;
-    height: 1px;
-    background: rgba(255, 200, 100, 0.30);
-    margin: 4px 0;
-    animation: drift1 8s ease-in-out infinite alternate;
+.contact .text ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
 }
 
-@keyframes drift1 {
-    0%   { transform: translateY(0px); }
-    100% { transform: translateY(-12px); }
+.contact .text ul li {
+    font-size: 17px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.70);
 }
 
-@keyframes drift2 {
-    0%   { transform: translateY(0px); }
-    100% { transform: translateY(-8px); }
-}
-
-@keyframes drift3 {
-    0%   { transform: translateY(0px); }
-    100% { transform: translateY(-10px); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .word, .sep { animation: none; }
-}
-
-.contact {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99999;
-    item-align: center;
+.contact .text ul li strong {
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.90);
 }
