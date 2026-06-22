@@ -12,16 +12,38 @@
     <section class="hero">
     <div class="hero-bg"></div>
     <div class="hero-veil"></div>
-    
-    <nav>
-        <ul>
 
+    <nav>
+
+        <ul>
+            <li><a href="main.html">Início</a></li>
+            <li><a href="about.html">Quem Somos</a></li>
+            <li><a href="partners.html">Parceiros</a></li>
+            <li><a href="contact.html">Contato</a></li>
+            <li class="icon" onclick="showSidebar()"><a href="javascript:void(0)""><img src="../css/menu.png"></a></li>
+        </ul>
+
+         <ul class="sidebar">
+            <li class="icon" onclick="hideSidebar()"><a  href="javascript:void(0)"><img src="../css/close.png"></a></li>
             <li><a href="main.html">Início</a></li>
             <li><a href="about.html">Quem Somos</a></li>
             <li><a href="partners.html">Parceiros</a></li>
             <li><a href="contact.html">Contato</a></li>
         </ul>
+
     </nav>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = "flex";
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = "none";
+        }
+    </script>
 
     <div class="words">
       <span class="word word-seguranca">Segurança</span>
@@ -32,8 +54,8 @@
     </div>
 
     <div class="contact">
-        <a href="https://wa.me" target="_blank" style="position:fixed;bottom:90px;left:50px;z-index:99999;">
-         <img src="../css/whatsappwhite.png" style="width:60px;height:60px;" alt="Fale conosco no WhatsApp">
+        <a href="https://wa.me/5522998812677" target="_blank" style="position:fixed;bottom:90px;left:50px;z-index:99999;">
+         <img src="../css/whatsapp.png" style="width:60px;height:60px;" alt="Fale conosco no WhatsApp">
         </a>
     </div>
 </section>
