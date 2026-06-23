@@ -5,59 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RRM - Transporte</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="javascript" href="../js/script.js">
 </head>
 <body>
 
-    <section class="hero">
+<section id="inicio" class="hero">
     <div class="hero-bg"></div>
     <div class="hero-veil"></div>
 
     <nav>
-
         <ul>
-            <li><a href="main.html">Início</a></li>
-            <li><a href="about.html">Quem Somos</a></li>
-            <li><a href="partners.html">Parceiros</a></li>
-            <li><a href="contact.html">Contato</a></li>
-            <li class="icon" onclick="showSidebar()"><a href="javascript:void(0)""><img src="../css/menu.png"></a></li>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#quemSomos">Quem Somos</a></li>
+            <li><a href="#parceiros">Parceiros</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li class="icon" onclick="showSidebar()"><a href="javascript:void(0)"><img src="../css/menu.png"></a></li>
         </ul>
 
-         <ul class="sidebar">
-            <li class="icon" onclick="hideSidebar()"><a  href="javascript:void(0)"><img src="../css/close.png"></a></li>
-            <li><a href="main.html">Início</a></li>
-            <li><a href="about.html">Quem Somos</a></li>
-            <li><a href="partners.html">Parceiros</a></li>
-            <li><a href="contact.html">Contato</a></li>
+        <ul class="sidebar">
+            <li class="icon" onclick="hideSidebar()"><a href="javascript:void(0)"><img src="../css/close.png"></a></li>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#quemSomos">Quem Somos</a></li>
+            <li><a href="#parceiros">Parceiros</a></li>
+            <li><a href="#contato">Contato</a></li>
         </ul>
-
     </nav>
 
-    <script>
-        function showSidebar() {
-            const sidebar = document.querySelector('.sidebar');
-            sidebar.style.display = "flex";
-        }
-
-        function hideSidebar() {
-            const sidebar = document.querySelector('.sidebar');
-            sidebar.style.display = "none";
-        }
-    </script>
-
     <div class="words">
-      <span class="word word-seguranca">Segurança</span>
-      <div class="sep"></div>
-      <span class="word word-qualidade">Qualidade</span>
-      <div class="sep"></div>
-      <span class="word word-compromisso">Compromisso</span>
+        <span class="word word-seguranca">Segurança</span>
+        <div class="sep"></div>
+        <span class="word word-qualidade">Qualidade</span>
+        <div class="sep"></div>
+        <span class="word word-compromisso">Compromisso</span>
     </div>
 
     <div class="contact">
-        <a href="https://wa.me/5522998812677" target="_blank" style="position:fixed;bottom:90px;left:50px;z-index:99999;">
-         <img src="../css/whatsapp.png" style="width:60px;height:60px;" alt="Fale conosco no WhatsApp">
+        <a href="https://wa.me/5522998812677" target="_blank">
+            <img src="../css/whatsapp.png" style="width:60px;height:60px;" alt="Fale conosco no WhatsApp">
         </a>
     </div>
 </section>
+
+<section id="quemSomos">
+    <div class="about">
+        <div class="about-box">
+            <h1><strong>Nossa missão</strong></h1>
+            <p>Na RRM Transporte, nossa missão é conectar pessoas e cargas com segurança, pontualidade e dedicação. Atuamos com o compromisso de oferecer soluções completas em transporte, atendendo tanto empresas quanto pessoas físicas com a mesma excelência e cuidado.</p>
+            <p>Realizamos o transporte de materiais e cargas diversas, garantindo que cada entrega chegue ao destino com integridade e no prazo combinado. Para quem precisa de um serviço mais personalizado, disponibilizamos motorista particular — incluindo para veículos de grande porte, como caminhões —, assegurando flexibilidade e confiança em cada operação.</p>
+            <p>Atendemos também profissionais do setor offshore, levando trabalhadores com comodidade e segurança até os pontos de embarque nas cidades, para que cada jornada comece bem antes de chegar à plataforma.</p>
+            <p>Mais do que transportar, a RRM Transporte se compromete a estar presente em cada etapa do caminho — com responsabilidade, respeito e o profissionalismo que nossos clientes merecem.</p>
+        </div>
+    </div>
+</section>
+
+<section id="parceiros">
+</section>
+
+<section id="contato">
+</section>
+
+<script>
+    function showSidebar() {
+        document.querySelector('.sidebar').style.display = "flex";
+    }
+    function hideSidebar() {
+        document.querySelector('.sidebar').style.display = "none";
+    }
+</script>
+
 </body>
 </html>
